@@ -1,0 +1,275 @@
+/* ==== */
+/* HEAD */
+/* ==== */
+
+html {	/* DEFINI LA POSICE POUR TOUT LE RESTE DE LA PAGE*/
+  font-family: sans-serif;
+}
+
+#menu {	/* PLACEMENT DE TOUTE LA BARRE DU HAUT */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 18px;
+	padding: 1em;
+	position: fixed;
+	right: 0;
+	z-index:1000;
+	left: 0;
+	background: -moz-linear-gradient(top, rgba(0,0,0,2) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,2) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,2) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+#menu img{	/* DIMENSION DU LOGO POTIRON */
+  height : 100%; 
+}
+
+.logo_amap{  /* COULEUR ET PADDING DU LOGO A GAUCHE */
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px; 
+  text-decoration: none;
+}
+
+.menu_droite {	/* PLACEMENT DU MENU EN HAUT A DROITE */
+  float: right;
+  margin-right: -15px;
+  display: flex;
+  list-style: none;
+}
+
+.navigation{ /* COULEUR ET PADDING DE LA BARRE DE NAVIGATION */
+  color: white;
+  padding-right: 2em;
+  padding-top: 15px;
+  text-decoration: none;
+}
+
+.navigation:hover { /* COULEUR DU HOVER DE LA BARRE DE NAVIGATION */
+	color: orange;
+	text-decoration: none;
+}
+
+
+/* ==== */
+/* BODY */
+/* ==== */
+
+
+/* PARTIE PRINCIPALE */
+
+
+body {	/* PERMET DE NE PAS AVOIR DE BLANC AUTOUR DE LA PAGE */
+  margin: 0;
+}
+
+.intro {	/* DEFINI L'IMAGE DE FOND ET SES PROPORTIONS (EN HAUT DE LA PAGE) */
+	display: table;
+	width: 100%;
+	background: url("../img/paysage_ferme.jpg") top center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.overlay {	/* AJOUTE UNE TEINTE NOIR SUR L'IMAGE POUR FAIRE RESSORTIR LE TEXTE */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+.intro h1 {	/* DEFINI LA TAILLE, LA CAS ET LA COULEUR DU TITRE QUI EST SUR L'IMAGE */
+	color: #fff;
+	font-size: 64px;
+	letter-spacing: -1px;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.intro p {	/* DEFINI LA TAILLE, LA CAS ET LA COULEUR DU PARAGRAPHE QUI EST SUR L'IMAGE */
+	color: #fff;
+	font-size: 22px;
+  	margin: auto;
+  	width: 50%;
+  
+}
+
+.intro-text {	/* PLACEMENT DU TEXTE D'INTRODUCTION */
+	padding-top: 320px;
+	padding-bottom: 200px;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+}
+
+#partie_principale {	/* DEFINITION DE LA TAILLE DE LA PARTIE PRINCIPALE */
+	padding: 80px 0 80px 0;
+	background: #f6f6f6;
+}
+
+.container {	/* PLACEMENT DE LA PARTIE PRINCIPALE */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 24px;
+}
+
+.partie_texte {	/* PLACEMENT DU TEXTE PRINCIPALE (BIENVENUE) */
+	position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+	text-align: center;
+}
+
+.pas_souligner {	/* TEXTE NON SOULIGNE ET ORANGE */
+  text-decoration:none;
+  color: orange;
+}
+
+.texte_sous_image {	/* DEFINITION DE LA TAILLE ET POSITION DU TEXTE SOUS LES IMAGES */
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+	padding-top: 5em;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+#partie_principale .image_partie_principale img {	/* DEFINITION DE POSITION DES IMAGES */
+	display: block;
+	width: 100%;
+	height: 100%;
+	height: auto;
+}
+
+#partie_principale h3 {	/* DEFINITION DE LA TAILLE DU TITRE */
+	font-size: 22px;
+	font-weight: 600;
+	margin: 20px 0 0 0;
+}
+
+.blank{	/* PARTIE BLANCHE AVANT LE HR ORANGE */
+	padding: 4em;
+	background:#f6f6f6;
+}
+
+hr {	/* HR ORANGE */
+  height: 3px;
+  margin: -0.5em 30;
+  width: 150px;
+  padding: 0;
+  color: orange;
+  background-color: orange;
+  border: 0;
+}
+
+
+/* PARTIE CONTACT */
+
+
+.text-center {	/* CENTRER LE TEXTE*/
+  text-align: center;
+}
+
+#contact {	/* PARTIE CONTACT */
+	padding: 100px 0;
+	background: #F6F6F6;
+}
+
+
+#contact h3 {	/* TITRE H3 PARTIE CONTACT */
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.info_contact {	/* PLACEMENT DE LA PARTIE CONTACT */
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  width: 33%;
+}
+
+.formulaire{	/* PLACEMENT DE LA PARTIE FORMULAIRE */
+  width: 33%;
+  display: inline-block;
+}
+
+#contact .form-control {	/* DEFINITION DE LA TAILLE DU FORMULAIRE */
+	width: 100%;
+	padding: 20px 20px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+}
+
+
+.myButton {	/* DEFINITION DE L'ASPECT DU BOUTON */
+	-moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e8e8e8), color-stop(1, #ff8400));
+	background:-moz-linear-gradient(top, #e8e8e8 5%, #ff8400 100%);
+	background:-webkit-linear-gradient(top, #e8e8e8 5%, #ff8400 100%);
+	background:-o-linear-gradient(top, #e8e8e8 5%, #ff8400 100%);
+	background:-ms-linear-gradient(top, #e8e8e8 5%, #ff8400 100%);
+	background:linear-gradient(to bottom, #e8e8e8 5%, #ff8400 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#ff8400',GradientType=0);
+	background-color:#e8e8e8;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:12px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {	/* DEFINITION DE L'ASPECT DU BOUTON QUAND ON PASSE LE CURSEUR */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff8400), color-stop(1, #e8e8e8));
+	background:-moz-linear-gradient(top, #ff8400 5%, #e8e8e8 100%);
+	background:-webkit-linear-gradient(top, #ff8400 5%, #e8e8e8 100%);
+	background:-o-linear-gradient(top, #ff8400 5%, #e8e8e8 100%);
+	background:-ms-linear-gradient(top, #ff8400 5%, #e8e8e8 100%);
+	background:linear-gradient(to bottom, #ff8400 5%, #e8e8e8 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8400', endColorstr='#e8e8e8',GradientType=0);
+	background-color:#ff8400;
+}
+.myButton:active {	/* DEFINITION DE L'ASPECT DU BOUTON APRES CLIQUE */
+	position:relative;
+	top:1px;
+}
+
+
+/* PARTIE FOOTER */
+
+
+#footer {	/* DEFINITION COULEUR ET PADDING DE LA PARTIE FOOTER */
+	background: #333;
+	padding: 30px 0 20px;
+	color: grey;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

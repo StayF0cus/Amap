@@ -1,0 +1,271 @@
+#menu {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+    z-index:1000;
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,2) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,2) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,2) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+#footer {
+    background: #333;
+    padding: 30px 0 20px;
+}
+
+.footer_credit {
+    color: grey;
+
+}
+.gras{ /* Mettre le texte en gras */
+  font-weight: bold;
+}
+
+.taillelogo{
+  font-size: 25px; /* 25px afin de le mettre à la bonne hauteur */
+}
+
+#menu img{
+  height : 40%; /* afin de mettre le logo dans la bonne dimension */
+}
+
+.navigation{ /* COULEUR ET PADDING DE LA BARRE DE NAVIGATION */
+	color: white;
+	padding-right: 2em;
+	padding-top: 15px;
+  text-decoration: none;
+}
+
+.navigation:hover { /* COULEUR DU HOVER DE LA BARRE DE NAVIGATION */
+	color: orange;
+	text-decoration: none;
+}
+
+
+.footer_nom {
+    color: grey;
+}
+tr {
+  text-align: center;
+}
+
+caption {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table {
+  margin: 24px;
+}
+
+#premiere {
+  display: flex;
+  margin-left: 17%;
+  margin-top: 3em;
+
+}
+
+#deuxieme {
+  display: flex;
+  margin-left: 17%;
+ }
+
+#troisieme {
+  margin-left: 7%;
+  width: 8em;
+  border-spacing: 10%;
+}
+#tab3 {
+  border-spacing: 2em;
+  padding: 1em;
+  border-radius : 1em;
+}
+
+.pale {
+  background-color: #77B5FE;
+}
+
+.orange {
+  background-color: #ED7F10;
+}
+
+.rose
+{
+  background-color: #FD6C9E;
+}
+
+.vert {
+  background-color: #82C46C;
+}
+
+.rouge {
+  background-color: #E9383F;
+}
+
+.gris {
+  background-color: #999999;
+}
+
+.jaune {
+  background-color: #F0E68C;
+}
+
+.violet {
+  background-color: #BA55D3;
+}
+
+.marron {
+  background-color: #DEB887;
+}
+.bleu {
+  background-color: #DF0174;
+}
+
+.enfant {
+  background-color: #FFD700;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+.a_white{
+	color: white;
+	padding-right: 2em;
+	padding-top: 15px;
+}
+
+.a_white:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+
+.menu_droite {
+  float: right !important;
+  margin-right: -15px;
+  display: flex;
+}
+
+.logo_amap{
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  color: white;
+  font-size: 120%;
+}
+
+.logo_amap:hover {
+	text-decoration: none;
+	color: white;
+}
+
+/* ======================================================================================================================================================== */
+
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/Cueillette.jpg) top center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.overlay {
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+.intro h1 {
+	color: #fff;
+	font-size: 64px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	}
+
+.intro p {
+	color: #fff;
+	font-size: 22px;
+	margin-top: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	}
+
+.intro-text {
+	padding-top: 320px;
+	padding-bottom: 200px;
+	text-align: center;
+	}
+
+
+
+/* Footer Section*/
+#footer {
+	background: #333;
+	padding: 30px 0 20px;
+}
+#footer h3 {
+	color: #1e7a46;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+#footer .social {
+	margin: 10px 0 50px 0;
+}
+#footer .social ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+#footer .social i.fa {
+	font-size: 22px;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	background: #444;
+	color: #6aaf08;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+#footer .social i.fa:hover {
+	background: #6aaf08;
+	color: #fff;
+}
+#footer p {
+	color: #666;
+	font-size: 15px;
+}
+#footer a {
+	color: #888;
+}
+#footer a:hover {
+	color: #ccc;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
